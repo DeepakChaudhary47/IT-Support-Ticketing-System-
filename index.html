@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Support Ticketing System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>IT Support Ticketing System</h1>
+  <form id="ticketForm">
+    <h2>Create or Update Ticket</h2>
+    <input type="text" id="ticketId" placeholder="Ticket ID (Leave empty for new ticket)" />
+    <input type="text" id="title" placeholder="Title" required />
+    <textarea id="description" placeholder="Description" rows="4" required></textarea>
+    <select id="priority">
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+    <select id="status">
+      <option value="Open">Open</option>
+      <option value="In Progress">In Progress</option>
+      <option value="Resolved">Resolved</option>
+    </select>
+    <button type="submit">Save Ticket</button>
+  </form>
+  <h2>All Tickets</h2>
+  <div id="tickets"></div>
+  <footer>
+    Built with ❤️ by Deepak Chaudhary
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
